@@ -1,0 +1,15 @@
+Tank:
+  turret_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+      - TURRET_Y
+      - TURRET_P
+    gains:
+      TURRET_Y:
+        p: 1000
+        i: 100
+        d: 10
+      TURRET_P:
+        p: 1000
+        i: 100
+        d: 10
