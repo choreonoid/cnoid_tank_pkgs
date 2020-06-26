@@ -1,0 +1,7 @@
+<launch>
+  <!-- Choreonoid ROS -->
+  <node name="choreonoid_ros" pkg="choreonoid_ros" type="choreonoid" args="$(find cnoid_tank_bringup)/project/RTFPlant/Tank.cnoid"/>
+  
+  <!-- ROS Control -->
+  <include file="$(find cnoid_tank_control)/launch/control.launch"/>
+</launch>
