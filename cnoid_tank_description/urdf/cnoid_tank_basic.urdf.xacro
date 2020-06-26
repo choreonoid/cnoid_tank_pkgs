@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<robot name="tank" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/torso.urdf.xacro"/>
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/track.urdf.xacro"/>
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/common.xacro"/>
+  
+  <link name="base_footprint"/>
+  <!-- Torso -->
+  <xacro:cnoid_tank_torso parent="base_footprint">
+    <origin xyz="0 0 0.1059"/>
+  </xacro:cnoid_tank_torso>
+
+  <!-- TRACK -->
+  <xacro:cnoid_tank_track suffix="L" side="1.0"/>
+  <xacro:cnoid_tank_track suffix="R" side="-1.0"/>
+
+  <!-- Transmission -->
+  <xacro:joint_position_trans_v0 name="TURRET_Y"/>
+  <xacro:joint_position_trans_v0 name="TURRET_P"/>
+  <xacro:joint_velocity_trans_v0 name="TRACK_L"/>
+  <xacro:joint_velocity_trans_v0 name="TRACK_R"/>
+</robot>

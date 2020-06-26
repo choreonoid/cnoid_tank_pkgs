@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot name="tank" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/cnoid_tank_basic.urdf.xacro"/>
+
+  <link name="Kinect_base">
+    <visual>
+      <geometry>
+        <mesh filename="package://cnoid_tank_description/meshes/KINECT.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://cnoid_tank_description/meshes/KINECT.dae"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Kinect_base" type="fixed">
+    <origin xyz="0 0 0.1205"/>
+    <parent link="TURRET_P"/>
+    <child link ="Kinect_base"/>
+  </joint>
+
+  <link name="Kinect"/>
+  <joint name="Kinect" type="fixed">
+    <origin rpy="${M_PI/2} ${M_PI} ${M_PI/2}"/>
+    <parent link="Kinect_base"/>
+    <child link="Kinect"/>
+  </joint>
+
+  <link name="VLP-16_base"/>
+  <joint name="VLP-16_base" type="fixed">
+    <origin xyz="0 0 0.225"/>
+    <parent link="TURRET_P"/>
+    <child link="VLP-16_base"/>
+  </joint>
+  <link name="VLP-16"/>
+  <joint name="VLP-16" type="fixed">
+    <origin rpy="${M_PI/2} 0 ${-M_PI/2}"/>
+    <parent link="VLP-16_base"/>
+    <child link="VLP-16"/>
+  </joint>
+  
+</robot>

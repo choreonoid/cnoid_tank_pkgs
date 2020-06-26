@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/common.xacro"/>
+
+  <xacro:macro name="cnoid_tank_track" params="suffix side">
+    <link name="TRACK_${suffix}">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TRACK_${suffix}.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TRACK_${suffix}.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="TRACK_${suffix}" type="fixed">
+      <origin xyz="0 ${side * 0.22} -0.026"/>
+      <parent link="CHASSIS"/>
+      <child link="TRACK_${suffix}"/>
+    </joint>
+    
+    <link name="WHEEL_${suffix}0">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="WHEEL_${suffix}0" type="fixed">
+      <origin xyz="0.25 ${side * -0.005} 0"/>
+      <parent link="TRACK_${suffix}"/>
+      <child link="WHEEL_${suffix}0"/>
+    </joint>
+
+    <link name="WHEEL_${suffix}1">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="WHEEL_${suffix}1" type="fixed">
+      <origin xyz="0 ${side * -0.005} 0"/>
+      <parent link="TRACK_${suffix}"/>
+      <child link="WHEEL_${suffix}1"/>
+    </joint>
+
+    <link name="WHEEL_${suffix}2">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/WHEEL.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="WHEEL_${suffix}2" type="fixed">
+      <origin xyz="-0.25 ${side * -0.005} 0"/>
+      <parent link="TRACK_${suffix}"/>
+      <child link="WHEEL_${suffix}2"/>
+    </joint>
+  </xacro:macro>
+</robot>

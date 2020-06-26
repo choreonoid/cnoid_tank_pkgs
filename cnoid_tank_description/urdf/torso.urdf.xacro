@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find cnoid_tank_description)/urdf/common.xacro"/>
+
+  <xacro:macro name="cnoid_tank_torso" params="parent *origin">
+    <link name="base_link"/>
+    <joint name="base_link" type="fixed">
+      <xacro:insert_block name="origin"/>
+      <parent link="${parent}"/>
+      <child link="base_link"/>
+    </joint>
+    
+    <link name="CHASSIS">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/CHASSIS.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/CHASSIS.dae"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="8.0"/>
+        <inertia
+            ixx="0.1" ixy="0.0" ixz="0.0"
+            iyy="0.1" iyz="0.0" izz ="0.5"/>
+      </inertial>
+    </link>
+    <joint name="CHASSIS" type="fixed">
+      <origin xyz="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="CHASSIS"/>
+    </joint>
+
+    <link name="TURRET_Y">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TURRET_Y.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TURRET_Y.dae"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <origin xyz="0 0 0.025"/>
+        <mass value="4.0"/>
+        <inertia
+            ixx="0.1" ixy="0.0" ixz="0.0"
+            iyy="0.1" iyz="0.0" izz ="0.1"/>
+      </inertial>
+    </link>
+    <joint name="TURRET_Y" type="continuous">
+      <origin xyz="-0.04 0 0.1125"/>
+      <axis xyz="0 0 -1"/>
+      <parent link="CHASSIS"/>
+      <child link="TURRET_Y"/>
+      <limit effort="30" velocity="${90/180*M_PI}"/>
+    </joint>
+
+    <link name="TURRET_P">
+      <visual>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TURRET_P.dae"/>
+        </geometry>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://cnoid_tank_description/meshes/TURRET_P.dae"/>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="TURRET_P" type="revolute">
+      <origin xyz="0 0 0.0475"/>
+      <axis xyz="0 -1 0"/>
+      <parent link="TURRET_Y"/>
+      <child link="TURRET_P"/>
+      <limit effort="30" velocity="${90/180*M_PI}" lower="${-10/180*M_PI}" upper="${45/180*M_PI}" />
+    </joint>
+  </xacro:macro>
+</robot>
