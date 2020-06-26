@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cnoid_tank_bringup</name>
+  <version>1.0.0</version>
+  <description>The Tank bringup package</description>
+
+  <maintainer email="groadpg@gmail.com">Ryodo Tanaka</maintainer>
+  <license>MIT</license>
+
+  <author email="groadpg@gmail.com">RyodoTanaka</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>choreonoid</depend>
+  <exec_depend>choreonoid_ros</exec_depend>
+  <exec_depend>cnoid_tank_control</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+
+</package>
