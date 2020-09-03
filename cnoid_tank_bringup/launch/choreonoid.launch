@@ -1,0 +1,12 @@
+<launch>
+  <arg name="project_file" default="Labo/Tank.cnoid"/>
+  <!-- <arg name="project_file" default="RTFPlant/Tank.cnoid"/> -->
+  
+  <!-- Choreonoid ROS -->
+  <include file="$(find choreonoid_ros)/launch/choreonoid.launch">
+    <arg name="choreonoid_arg" value="$(find cnoid_tank_bringup)/project/$(arg project_file)"/>
+  </include>
+  
+  <!-- ROS Control -->
+  <include file="$(find cnoid_tank_control)/launch/control.launch"/>  
+</launch>
