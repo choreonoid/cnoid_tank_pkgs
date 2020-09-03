@@ -4,6 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 343
@@ -180,14 +181,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 3.8823349475860596
-        Min Value: -0.06849011778831482
+        Max Value: 4.3278656005859375
+        Min Value: -0.0703757107257843
         Value: true
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud
       Color: 255; 255; 255
-      Color Transformer: AxisColor
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -200,7 +201,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.02500000037252903
+      Size (m): 0.009999999776482582
       Style: Spheres
       Topic: /Tank/VLP_16/point_cloud
       Unreliable: false
@@ -246,6 +247,8 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
+        map:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -277,6 +280,8 @@ Visualization Manager:
                   VLP-16_base:
                     VLP-16:
                       {}
+        map:
+          {}
       Update Interval: 0
       Value: true
     - Class: rviz/Image
@@ -291,11 +296,41 @@ Visualization Manager:
       Transport Hint: compressed
       Unreliable: false
       Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 4.515158176422119
+        Min Value: -0.08833637833595276
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.019999999552965164
+      Style: Spheres
+      Topic: /point_map
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_footprint
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -319,7 +354,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.386270046234131
+      Distance: 11.563392639160156
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -334,10 +369,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.44979730248451233
+      Pitch: 0.45979729294776917
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.473592519760132
+      Yaw: 3.513594627380371
     Saved: ~
 Window Geometry:
   Displays:
