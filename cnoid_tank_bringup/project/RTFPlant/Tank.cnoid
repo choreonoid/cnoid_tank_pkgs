@@ -19,14 +19,14 @@ items:
           name: "1F"
           plugin: Base
           class: FolderItem
-          isChecked: true
+          is_checked: true
           children: 
             - 
               id: 3
               name: "Floor"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Floor.body"
                 format: CHOREONOID-BODY
@@ -53,7 +53,7 @@ items:
               name: "Columns"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Columns.body"
                 format: CHOREONOID-BODY
@@ -80,7 +80,7 @@ items:
               name: "Catwalk"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Catwalk.body"
                 format: CHOREONOID-BODY
@@ -107,7 +107,7 @@ items:
               name: "Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Handrails.body"
                 format: CHOREONOID-BODY
@@ -134,7 +134,7 @@ items:
               name: "Ramp.body"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Ramp.body"
                 format: CHOREONOID-BODY
@@ -161,7 +161,7 @@ items:
               name: "Platform"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Platform.body"
                 format: CHOREONOID-BODY
@@ -188,7 +188,7 @@ items:
               name: "SteelPlae"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/SteelPlate.body"
                 format: CHOREONOID-BODY
@@ -215,7 +215,7 @@ items:
               name: "Grating"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Grating.body"
                 format: CHOREONOID-BODY
@@ -242,7 +242,7 @@ items:
               name: "PipeL"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeL.body"
                 format: CHOREONOID-BODY
@@ -269,7 +269,7 @@ items:
               name: "ButtonBox"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/ButtonBox.body"
                 format: CHOREONOID-BODY
@@ -296,7 +296,7 @@ items:
               name: "SwitchBoard"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/SwitchBoard.body"
                 format: CHOREONOID-BODY
@@ -323,7 +323,7 @@ items:
               name: "TankA"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankA.body"
                 format: CHOREONOID-BODY
@@ -350,7 +350,7 @@ items:
               name: "TankPlatformStage"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStage.body"
                 format: CHOREONOID-BODY
@@ -377,7 +377,7 @@ items:
               name: "TankPlatformStageHandrail"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStageHandrails.body"
                 format: CHOREONOID-BODY
@@ -404,7 +404,7 @@ items:
               name: "TankPlatformStairs1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairs.body"
                 format: CHOREONOID-BODY
@@ -431,7 +431,7 @@ items:
               name: "TankPlatformStairs1Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairsHandrails.body"
                 format: CHOREONOID-BODY
@@ -458,7 +458,7 @@ items:
               name: "TankPlatformStairs2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairs.body"
                 format: CHOREONOID-BODY
@@ -485,7 +485,7 @@ items:
               name: "TankPlatformStairs2Handrails"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankPlatformStairsHandrails.body"
                 format: CHOREONOID-BODY
@@ -512,7 +512,7 @@ items:
               name: "PipeG"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeG.body"
                 format: CHOREONOID-BODY
@@ -539,7 +539,7 @@ items:
               name: "PipeB"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeB.body"
                 format: CHOREONOID-BODY
@@ -566,7 +566,7 @@ items:
               name: "FireHydrant"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/FireHydrant.body"
                 format: CHOREONOID-BODY
@@ -593,7 +593,7 @@ items:
               name: "TankB"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/TankB.body"
                 format: CHOREONOID-BODY
@@ -620,7 +620,7 @@ items:
               name: "Pump"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/Pump.body"
                 format: CHOREONOID-BODY
@@ -647,7 +647,7 @@ items:
               name: "PipeP1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeP1.body"
                 format: CHOREONOID-BODY
@@ -674,7 +674,7 @@ items:
               name: "PipeP2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeP2.body"
                 format: CHOREONOID-BODY
@@ -701,7 +701,7 @@ items:
               name: "PipePS"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipePS.body"
                 format: CHOREONOID-BODY
@@ -728,7 +728,7 @@ items:
               name: "PipeY"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeY.body"
                 format: CHOREONOID-BODY
@@ -755,7 +755,7 @@ items:
               name: "PipeBG1"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG1.body"
                 format: CHOREONOID-BODY
@@ -782,7 +782,7 @@ items:
               name: "PipeBG2"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG2.body"
                 format: CHOREONOID-BODY
@@ -811,7 +811,7 @@ items:
               name: "PipeBG3"
               plugin: Body
               class: BodyItem
-              isChecked: true
+              is_checked: true
               data: 
                 file: "${SHARE}/RTF-TestPlant/model/1F/PipeBG3.body"
                 format: CHOREONOID-BODY
@@ -838,7 +838,7 @@ items:
           name: "2F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/2F/2F.body"
             format: CHOREONOID-BODY
@@ -865,7 +865,7 @@ items:
           name: "3F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/3F/3F.body"
             format: CHOREONOID-BODY
@@ -892,7 +892,7 @@ items:
           name: "4F"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/4F/4F.body"
             format: CHOREONOID-BODY
@@ -919,7 +919,7 @@ items:
           name: "Chimney"
           plugin: Body
           class: BodyItem
-          isChecked: true
+          is_checked: true
           data: 
             file: "${SHARE}/RTF-TestPlant/model/Chimney/Chimney.body"
             format: CHOREONOID-BODY
@@ -946,7 +946,7 @@ items:
           name: "AISTSimulator"
           plugin: Body
           class: AISTSimulatorItem
-          isChecked: true
+          is_checked: true
           data: 
             timeStep: 0.001
             realtimeSync: true
@@ -996,7 +996,7 @@ items:
           name: "WorldROS"
           plugin: ROS
           class: WorldROSItem
-          isChecked: true
+          is_checked: true
           data: 
             max_clock_publishing_rate: 100
         - 
@@ -1004,8 +1004,8 @@ items:
           name: "Tank"
           plugin: Body
           class: BodyItem
-          isChecked: true
-          data:
+          is_checked: true
+          data: 
             file: "${SHARE}/cnoid_tank_bringup/model/Tank.body"
             format: CHOREONOID-BODY
             rootPosition: [ 14, 8, 0.106 ]
@@ -1033,24 +1033,18 @@ items:
               name: "BodyROS"
               plugin: ROS
               class: BodyROSItem
-              isChecked: true
+              is_checked: true
               data: 
                 body_ros_version: 0
                 joint_state_update_rate: 100
             - 
               id: 42
               name: "ROSControl"
-              plugin: Body
-              class: SimpleControllerItem
-              isChecked: true
+              plugin: ROS
+              class: ROSControlItem
+              is_checked: true
               data: 
-                isNoDelayMode: false
-                controllerOptions: ""
-                controller: "choreonoid_ros_control"
-                baseDirectory: "Controller directory"
-                reloading: false
-                exportSymbols: false
-                isOldTargetVariableMode: false
+                name space: Tank
 views: 
   - 
     id: 0
@@ -1078,10 +1072,9 @@ views:
       editMode: false
       viewpointControlMode: thirdPerson
       collisionLines: false
-      polygonMode: fill
       restrictCameraRoll: true
       verticalAxis: Z
-      lightingMode: full
+      lightingMode: normal
       cullingMode: enabled
       defaultHeadLight: true
       defaultHeadLightIntensity: 0.75
@@ -1115,7 +1108,7 @@ views:
           fieldOfView: 0.698132
           near: 0.01
           far: 100
-          eye: [ 18.5914, 11.5066, 1.4593 ]
+          eye: [ 18.0909, 11.1964, 1.36427 ]
           direction: [ -0.83916, -0.520027, -0.159318 ]
           up: [ -0.135423, -0.0839216, 0.987227 ]
         - 
@@ -1138,10 +1131,9 @@ views:
       editMode: false
       viewpointControlMode: thirdPerson
       collisionLines: false
-      polygonMode: fill
       restrictCameraRoll: true
       verticalAxis: Z
-      lightingMode: full
+      lightingMode: normal
       cullingMode: enabled
       defaultHeadLight: true
       defaultHeadLightIntensity: 0.75
@@ -1175,9 +1167,9 @@ views:
           fieldOfView: 0.698132
           near: 0.01
           far: 100
-          eye: [ -2.00307, -1.42061, 0.458768 ]
-          direction: [ 0.714656, 0.695834, -0.0712805 ]
-          up: [ 0.051071, 0.0497259, 0.997456 ]
+          eye: [ 18.9866, 10.0161, 1.68008 ]
+          direction: [ -0.944282, -0.292579, -0.150764 ]
+          up: [ -0.14401, -0.0446203, 0.98857 ]
         - 
           camera: [ System, Orthographic ]
           orthoHeight: 20
@@ -1210,54 +1202,13 @@ views:
       show_phases: true
   - 
     id: 7
+    name: "Links / Devices"
     plugin: Body
-    class: LinkSelectionView
+    class: LinkDeviceListView
     mounted: true
     state: 
-      listingMode: "Link Tree"
-      currentBodyItem: 3
-      bodyItems: 
-        - 
-          id: 3
-          selectedLinks: [ 0 ]
-        - 
-          id: 5
-          selectedLinks: [ 4 ]
-        - 
-          id: 6
-          selectedLinks: [ 1 ]
-        - 
-          id: 11
-          selectedLinks: [ 1 ]
-        - 
-          id: 25
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
-        - 
-          id: 22
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6 ]
-        - 
-          id: 26
-          selectedLinks: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12 ]
-        - 
-          id: 28
-          selectedLinks: [ 0 ]
-        - 
-          id: 27
-          selectedLinks: [ 0 ]
-        - 
-          id: 29
-          selectedLinks: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
-        - 
-          id: 32
-          selectedLinks: [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
-        - 
-          id: 40
-          selectedLinks: [ 0 ]
-  - 
-    id: 8
-    plugin: Python
-    class: PythonConsoleView
-    mounted: true
+      mode: list
+      element_type: link
 toolbars: 
   "TimeBar": 
     minTime: 0
@@ -1269,6 +1220,8 @@ toolbars:
     speedScale: 1
     syncToOngoingUpdates: true
     autoExpansion: true
+  "LeggedBodyBar": 
+    stanceWidth: 0.15
   "KinematicsBar": 
     forward_kinematics: true
     inverse_kinematics: true
@@ -1279,10 +1232,6 @@ toolbars:
     snapDistance: 0.025
     penetrationBlockDepth: 0.0005
     lazyCollisionDetectionMode: true
-  "BodyBar": 
-    current: 40
-  "LeggedBodyBar": 
-    stanceWidth: 0.15
   "BodyMotionGenerationBar": 
     autoGenerationForNewBody: true
     balancer: false
@@ -1528,12 +1477,11 @@ viewAreas:
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 578, 392 ]
+          sizes: [ 591, 401 ]
           children: 
             - 
               type: pane
               views: [ 1 ]
-              current: 1
             - 
               type: pane
               views: [ 0, 7 ]
@@ -1541,7 +1489,7 @@ viewAreas:
         - 
           type: splitter
           orientation: vertical
-          sizes: [ 704, 266 ]
+          sizes: [ 720, 272 ]
           children: 
             - 
               type: splitter
@@ -1555,11 +1503,9 @@ viewAreas:
                 - 
                   type: pane
                   views: [ 3 ]
-                  current: 3
             - 
               type: pane
-              views: [ 2, 8 ]
-              current: 2
+              views: [ 2 ]
 layoutOfToolBars: 
   rows: 
     - 
