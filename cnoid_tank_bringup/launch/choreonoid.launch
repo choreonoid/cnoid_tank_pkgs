@@ -8,5 +8,5 @@
   </include>
   
   <!-- ROS Control -->
-  <include file="$(find cnoid_tank_control)/launch/control.launch"/>  
+  <include file="$(find cnoid_tank_control)/launch/control.launch"/>
 </launch>
