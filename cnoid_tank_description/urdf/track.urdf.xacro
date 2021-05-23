@@ -4,7 +4,14 @@
   <xacro:include filename="$(find cnoid_tank_description)/urdf/common.xacro"/>
 
   <xacro:macro name="cnoid_tank_track" params="suffix side">
-    <link name="TRACK_${suffix}">
+    <link name="TRACK_${suffix}"/>
+    <joint name="TRACK_${suffix}" type="continuous">
+      <axis xyz="0 ${side} 0"/>
+      <origin xyz="0 ${side * 0.22} -0.026"/>
+      <parent link="CHASSIS"/>
+      <child link="TRACK_${suffix}"/>
+    </joint>
+    <link name="BELT_${suffix}">
       <visual>
         <geometry>
           <mesh filename="package://cnoid_tank_description/meshes/TRACK_${suffix}.dae"/>
@@ -16,10 +23,10 @@
         </geometry>
       </collision>
     </link>
-    <joint name="TRACK_${suffix}" type="fixed">
+    <joint name="BELT_${suffix}" type="fixed">
       <origin xyz="0 ${side * 0.22} -0.026"/>
       <parent link="CHASSIS"/>
-      <child link="TRACK_${suffix}"/>
+      <child link="BELT_${suffix}"/>
     </joint>
     
     <link name="WHEEL_${suffix}0">
@@ -36,7 +43,7 @@
     </link>
     <joint name="WHEEL_${suffix}0" type="fixed">
       <origin xyz="0.25 ${side * -0.005} 0"/>
-      <parent link="TRACK_${suffix}"/>
+      <parent link="BELT_${suffix}"/>
       <child link="WHEEL_${suffix}0"/>
     </joint>
 
@@ -54,7 +61,7 @@
     </link>
     <joint name="WHEEL_${suffix}1" type="fixed">
       <origin xyz="0 ${side * -0.005} 0"/>
-      <parent link="TRACK_${suffix}"/>
+      <parent link="BELT_${suffix}"/>
       <child link="WHEEL_${suffix}1"/>
     </joint>
 
@@ -72,7 +79,7 @@
     </link>
     <joint name="WHEEL_${suffix}2" type="fixed">
       <origin xyz="-0.25 ${side * -0.005} 0"/>
-      <parent link="TRACK_${suffix}"/>
+      <parent link="BELT_${suffix}"/>
       <child link="WHEEL_${suffix}2"/>
     </joint>
   </xacro:macro>
