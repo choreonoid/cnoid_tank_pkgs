@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /PointCloud1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 343
@@ -58,6 +59,16 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        BELT_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        BELT_R:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         CHASSIS:
           Alpha: 1
           Show Axes: false
@@ -80,12 +91,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         TRACK_R:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         TURRET_P:
           Alpha: 1
           Show Axes: false
@@ -181,14 +190,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 4.3278656005859375
-        Min Value: -0.0703757107257843
+        Max Value: 2.167870283126831
+        Min Value: -0.11658307909965515
         Value: true
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud
       Color: 255; 255; 255
-      Color Transformer: FlatColor
+      Color Transformer: AxisColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -201,7 +210,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.014999999664723873
       Style: Spheres
       Topic: /Tank/VLP_16/point_cloud
       Unreliable: false
@@ -213,6 +222,10 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        BELT_L:
+          Value: true
+        BELT_R:
+          Value: true
         CHASSIS:
           Value: true
         Kinect:
@@ -247,8 +260,6 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        map:
-          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -258,20 +269,24 @@ Visualization Manager:
         base_footprint:
           base_link:
             CHASSIS:
-              TRACK_L:
+              BELT_L:
                 WHEEL_L0:
                   {}
                 WHEEL_L1:
                   {}
                 WHEEL_L2:
                   {}
-              TRACK_R:
+              BELT_R:
                 WHEEL_R0:
                   {}
                 WHEEL_R1:
                   {}
                 WHEEL_R2:
                   {}
+              TRACK_L:
+                {}
+              TRACK_R:
+                {}
               TURRET_Y:
                 TURRET_P:
                   Kinect_base:
@@ -280,8 +295,6 @@ Visualization Manager:
                   VLP-16_base:
                     VLP-16:
                       {}
-        map:
-          {}
       Update Interval: 0
       Value: true
     - Class: rviz/Image
@@ -296,41 +309,11 @@ Visualization Manager:
       Transport Hint: compressed
       Unreliable: false
       Value: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 4.515158176422119
-        Min Value: -0.08833637833595276
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/PointCloud2
-      Color: 255; 255; 255
-      Color Transformer: AxisColor
-      Decay Time: 0
-      Enabled: true
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: PointCloud2
-      Position Transformer: XYZ
-      Queue Size: 10
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.019999999552965164
-      Style: Spheres
-      Topic: /point_map
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -354,25 +337,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 11.563392639160156
+      Distance: 6.663640022277832
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.3527833223342896
-        Y: -0.5720024704933167
-        Z: 1.1856696605682373
+        X: 1.02006196975708
+        Y: 0.2568424642086029
+        Z: 0.8462594747543335
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.45979729294776917
+      Pitch: 0.2697976529598236
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.513594627380371
+      Yaw: 3.5236003398895264
     Saved: ~
 Window Geometry:
   Displays:
