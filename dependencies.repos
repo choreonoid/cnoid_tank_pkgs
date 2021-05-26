@@ -7,10 +7,6 @@
     uri: https://github.com/choreonoid/choreonoid_ros.git
     version: master
 - git:
-    local-name: choreonoid_ros_control
-    uri: https://github.com/RyodoTanaka/choreonoid_ros_control.git
-    version: master
-- git:
     local-name: rtf-test-plant
     uri: https://github.com/choreonoid/rtf-test-plant.git
     version: master
