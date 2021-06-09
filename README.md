@@ -21,7 +21,8 @@ git clone --recursive -b dev/launch-update https://github.com/RyodoTanaka/cnoid_
 cd <cnoid_ws>
 rosdep update
 rosdep install -i -y -r --from-paths src
-catkin_make
+catkin config --cmake-args -DBUILD_SCENE_EFFECTS_PLUGIN=ON -DBUILD_WRS2018=ON -DBUILD_ROS_TANK=ON -DUSE_PYTHON3=OFF -DUSE_PYBIND11=ON -DBUILD_PYTHON_PLUGIN=ON -DBUILD_PYTHON_SIM_SCRIPT_PLUGIN=ON -DENABLE_PYTHON=ON -DBUILD_COLLISION_HANDLER_SAMPLE=ON -DBUILD_CONTACT_FORCE_EXTRACTION=ON -DBUILD_TRACKED_VEHICLE_SAMPLE=ON -DCMAKE_BUILD_TYPE=Release
+catkin build
 source devel/setup.bash
 ```
 
