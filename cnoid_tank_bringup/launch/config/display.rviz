@@ -4,6 +4,8 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
+        - /Global Options1
+        - /PointCloud1
         - /TF1/Frames1
       Splitter Ratio: 0.5
     Tree Height: 343
@@ -57,6 +59,16 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        BELT_L:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        BELT_R:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         CHASSIS:
           Alpha: 1
           Show Axes: false
@@ -79,12 +91,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         TRACK_R:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         TURRET_P:
           Alpha: 1
           Show Axes: false
@@ -180,8 +190,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 3.8823349475860596
-        Min Value: -0.06849011778831482
+        Max Value: 2.167870283126831
+        Min Value: -0.11658307909965515
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -200,7 +210,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.02500000037252903
+      Size (m): 0.014999999664723873
       Style: Spheres
       Topic: /Tank/VLP_16/point_cloud
       Unreliable: false
@@ -212,6 +222,10 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
+        BELT_L:
+          Value: true
+        BELT_R:
+          Value: true
         CHASSIS:
           Value: true
         Kinect:
@@ -255,20 +269,24 @@ Visualization Manager:
         base_footprint:
           base_link:
             CHASSIS:
-              TRACK_L:
+              BELT_L:
                 WHEEL_L0:
                   {}
                 WHEEL_L1:
                   {}
                 WHEEL_L2:
                   {}
-              TRACK_R:
+              BELT_R:
                 WHEEL_R0:
                   {}
                 WHEEL_R1:
                   {}
                 WHEEL_R2:
                   {}
+              TRACK_L:
+                {}
+              TRACK_R:
+                {}
               TURRET_Y:
                 TURRET_P:
                   Kinect_base:
@@ -319,25 +337,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 6.386270046234131
+      Distance: 6.663640022277832
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.3527833223342896
-        Y: -0.5720024704933167
-        Z: 1.1856696605682373
+        X: 1.02006196975708
+        Y: 0.2568424642086029
+        Z: 0.8462594747543335
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.44979730248451233
+      Pitch: 0.2697976529598236
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.473592519760132
+      Yaw: 3.5236003398895264
     Saved: ~
 Window Geometry:
   Displays:

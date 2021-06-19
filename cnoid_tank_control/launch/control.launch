@@ -10,11 +10,17 @@
   <node ns="Tank" name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true"/>
   
   <!-- load the controllers -->
-  <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_position_control.yaml" command="load"/>
+  <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_joint_state_control.yaml" command="load"/>
+  <!-- <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_position_control.yaml" command="load"/> -->
+  <!-- <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_velocity_control.yaml" command="load"/> -->
+  <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_effort_control.yaml" command="load"/>
   <rosparam file="$(find cnoid_tank_control)/config/cnoid_tank_diff_drive_control.yaml" command="load"/>
+
+  
   <node name="tank_controller_spawner" pkg="controller_manager"
 		type="spawner" output="screen" respawn="true"
 		args="--namespace Tank
+              joint_state_controller
               turret_controller
               base_controller"/>  
 </launch>

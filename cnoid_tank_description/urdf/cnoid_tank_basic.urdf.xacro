@@ -16,8 +16,12 @@
   <xacro:cnoid_tank_track suffix="R" side="-1.0"/>
 
   <!-- Transmission -->
-  <xacro:joint_position_trans_v0 name="TURRET_Y"/>
-  <xacro:joint_position_trans_v0 name="TURRET_P"/>
+  <!-- <xacro:joint_position_trans_v0 name="TURRET_Y"/> -->
+  <!-- <xacro:joint_position_trans_v0 name="TURRET_P"/> -->
+  <!-- <xacro:joint_velocity_trans_v0 name="TURRET_Y"/> -->
+  <!-- <xacro:joint_velocity_trans_v0 name="TURRET_P"/> -->
+  <xacro:joint_effort_trans_v0 name="TURRET_Y"/>
+  <xacro:joint_effort_trans_v0 name="TURRET_P"/>
   <xacro:joint_velocity_trans_v0 name="TRACK_L"/>
   <xacro:joint_velocity_trans_v0 name="TRACK_R"/>
 </robot>
