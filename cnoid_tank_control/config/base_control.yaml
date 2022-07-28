@@ -1,18 +1,4 @@
 Tank:
-  turret_controller:
-    type: "position_controllers/JointTrajectoryController"
-    joints:
-      - TURRET_Y
-      - TURRET_P
-    gains:
-      TURRET_Y:
-        p: 100
-        i: 10
-        d: 1
-      TURRET_P:
-        p: 100
-        i: 10
-        d: 1
   base_controller:
     type        : "diff_drive_controller/DiffDriveController"
     left_wheel  : 'TRACK_L'
