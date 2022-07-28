@@ -23,7 +23,7 @@
 
   <link name="Kinect"/>
   <joint name="Kinect" type="fixed">
-    <origin rpy="${M_PI/2} ${M_PI} ${M_PI/2}"/>
+    <origin rpy="${M_PI/2} 0 ${-M_PI/2}"/>
     <parent link="Kinect_base"/>
     <child link="Kinect"/>
   </joint>
